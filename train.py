@@ -452,7 +452,7 @@ def parse_arguments():
     parser.add_argument("-w_d", "--weight_decay", type=float, default=0.0, help="Weight decay used by optimizers.")
     parser.add_argument("-w_i", "--weight_init", type=str, default="xavier", choices=["random", "Xavier"], help="Weight initialization method")
     parser.add_argument("-nhl", "--num_layers", type=int, default=3, help="Number of hidden layers used in feedforward neural network.")
-    parser.add_argument("-sz", "--hidden_size", type=int, default=128, help="Number of hidden neurons in a feedforward layer.")
+    parser.add_argument("-sz", "--hidden_size", type=int, default=64, help="Number of hidden neurons in a feedforward layer.")
     parser.add_argument("-a", "--activation", type=str, default="relu", choices=["sigmoid", "tanh", "ReLU"], help="Activation function to use")
     parser.add_argument("-v", "--verbose", type=bool, default=False, choices=[True,False], help="verbose function to use")
     parser.add_argument("-i_w", "--iswandb", type=bool, default=True, choices=[True,False], help="to log to wandb or not")
@@ -513,7 +513,7 @@ if __name__ == "__main__":
 
     }
 
-
+    # wandb.login()
     # sweep_id = wandb.sweep(sweep_config, entity=parameter_config["wandb_entity"], project=parameter_config["wandb_project"])
     # wandb.agent(sweep_id, function=train_function,count=1)   
 
