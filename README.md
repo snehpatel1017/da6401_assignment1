@@ -4,7 +4,59 @@ Implementing a FeedForward Neural Network with Backpropagation from scratch. Als
 
 
 **WandB Report** - https://api.wandb.ai/links/cs24m048-iit-madras/pewp0rgp
+
 **GitHub Repo** - https://github.com/snehpatel1017/da6401_assignment1
+# Code Structure
+
+## Main Components
+
+### NeuralNetwork Class
+Core implementation of the neural network with methods for:
+
+- **Parameter initialization**
+- **Forward propagation**
+- **Backward propagation**
+- **Training and prediction**
+- Various **activation functions**:
+  - Sigmoid
+  - Tanh
+  - ReLU
+- **Loss functions**:
+  - Cross-entropy
+  - Mean squared error
+
+### Optimizer Class
+Implementation of various optimization algorithms:
+
+- **Stochastic Gradient Descent (SGD)**
+- **Momentum**
+- **Nesterov Accelerated Gradient (NAG)**
+- **RMSProp**
+- **Adam**
+- **Nadam** (Nesterov-accelerated Adaptive Moment Estimation)
+
+### Training Function
+Configurable function to train the network with specified parameters.
+
+### Utility Functions
+- **One-hot encoding**
+- **Image plotting**
+
+---
+
+# Command-line Interface
+
+The script includes an **argument parser** that allows for easy configuration of hyperparameters:
+
+- **Dataset selection** (MNIST or Fashion MNIST)
+- **Network architecture**:
+  - Number of layers
+  - Hidden layer size
+- **Optimization parameters** (learning rate, momentum, etc.)
+- **Weight initialization method**
+- **Activation functions**
+- **Loss functions**
+
 ## Usage Instructions
 Run the `train.py` script with appropriate command-line arguments to train and evaluate the neural network using different optimization algorithms and configurations.
 <br><br>
@@ -47,17 +99,27 @@ Run with -h for parameter help.
 <br>
 
 <br><br>
+## Requirements
+
+The following libraries are required to run the neural network implementation:
+
+- **NumPy**  
+- **Matplotlib**  
+- **Wandb**  
+- **Scikit-learn**  
+- **Keras** (for dataset loading)  
+
 ## Results
-Maximum accuracy of 86.83% for Fashion MNIST dataset and 97.13% for MNIST dataset is achieved for the following configuration
+Maximum accuracy of 88% for Fashion MNIST dataset and 97% for MNIST dataset is achieved for the following configuration
  
 - Model Configuration:
   - Epochs : 10 
   - Number of Hidden Layers: 4
-  - Weight Decay: 0.0005
+  - Weight Decay: 0
   - Activation Function: ReLU
-  - Number of Hidden Neurons: 128
+  - Number of Hidden Neurons: 64/128
   - Learning Rate: 0.001
-  - Batch Size: 64
+  - Batch Size: 32
   - Weight Initialization: Xavier
   - Optimizer: NADAM
   - Loss Type: Cross Entropy
