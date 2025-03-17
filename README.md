@@ -4,6 +4,7 @@ Implementing a FeedForward Neural Network with Backpropagation from scratch. Als
 
 
 **WandB Report** - https://api.wandb.ai/links/cs24m048-iit-madras/pewp0rgp
+
 **GitHub Repo** - https://github.com/snehpatel1017/da6401_assignment1
 ## Usage Instructions
 Run the `train.py` script with appropriate command-line arguments to train and evaluate the neural network using different optimization algorithms and configurations.
