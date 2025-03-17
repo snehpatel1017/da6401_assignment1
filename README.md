@@ -54,11 +54,11 @@ Maximum accuracy of 86.83% for Fashion MNIST dataset and 97.13% for MNIST datase
 - Model Configuration:
   - Epochs : 10 
   - Number of Hidden Layers: 4
-  - Weight Decay: 0.0005
+  - Weight Decay: 0
   - Activation Function: ReLU
-  - Number of Hidden Neurons: 128
+  - Number of Hidden Neurons: 64/128
   - Learning Rate: 0.001
-  - Batch Size: 64
+  - Batch Size: 16
   - Weight Initialization: Xavier
   - Optimizer: NADAM
   - Loss Type: Cross Entropy
