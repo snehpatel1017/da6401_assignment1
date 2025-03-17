@@ -70,7 +70,7 @@ python train.py
 <br><br>
 Run with custom parameters.
 ```bash
-python train.py --wandb_entity myname --wandb_project myprojectname --dataset fashion_mnist --epochs 10 --batch_size 64 --loss cross_entropy --optimizer adam --learning_rate 0.001 --momentum 0.9 --beta 0.9 --beta1 0.9 --beta2 0.999 --epsilon 1e-10 --weight_decay 0.0005 --weight_init Xavier --num_layers 4 --hidden_size 64 --activation ReLU
+python train.py --wandb_entity cs24m-48-iit-madras --wandb_project da6401_assignment1 --dataset fashion_mnist --epochs 10 --batch_size 32 --loss cross_entropy --optimizer nadam --learning_rate 0.001 --momentum 0.9 --beta 0.9 --beta1 0.9 --beta2 0.999 --epsilon 1e-10 --weight_decay 0.0005 --weight_init xavier --num_layers 4 --hidden_size 64 --activation relu
 ```
 
 <br><br>
