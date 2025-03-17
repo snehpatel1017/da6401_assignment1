@@ -99,6 +99,16 @@ Run with -h for parameter help.
 <br>
 
 <br><br>
+## Requirements
+
+The following libraries are required to run the neural network implementation:
+
+- **NumPy**  
+- **Matplotlib**  
+- **Wandb**  
+- **Scikit-learn**  
+- **Keras** (for dataset loading)  
+
 ## Results
 Maximum accuracy of 88% for Fashion MNIST dataset and 97% for MNIST dataset is achieved for the following configuration
  
